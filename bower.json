@@ -1,0 +1,14 @@
+{
+  "name": "marvel-portlet",
+  "version": "0.0.1-SNAPSHOT",
+  "dependencies": {
+    "angular": "latest",
+    "angular-resource": "latest",
+    "momentjs": "latest",
+    "jquery": "latest",
+    "semantic-ui": "latest"
+  },
+  "resolutions": {
+    "angular": "1.2.13"
+  }
+}

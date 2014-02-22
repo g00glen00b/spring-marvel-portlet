@@ -1,0 +1,9 @@
+.marvel-app .ui.items:last-child {
+	margin-bottom: 0;
+}
+
+.marvel-app .ui.paging.buttons {
+	float: right;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
