@@ -1,4 +1,4 @@
-package be.g00glen00b.portal.service;
+package be.optis.portal.service;
 
 public class APIConfigurationException extends Exception {
 

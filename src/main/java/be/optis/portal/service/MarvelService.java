@@ -1,6 +1,6 @@
-package be.g00glen00b.portal.service;
+package be.optis.portal.service;
 
-import be.g00glen00b.portal.model.ApiKeys;
+import be.optis.portal.model.ApiKeys;
 
 
 public interface MarvelService {

@@ -1,4 +1,4 @@
-package be.g00glen00b.portal.model;
+package be.optis.portal.model;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

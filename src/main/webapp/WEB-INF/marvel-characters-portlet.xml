@@ -8,8 +8,9 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
-	<bean class="be.g00glen00b.portal.controllers.CharactersController" />
-	<bean class="be.g00glen00b.portal.controllers.SettingsController" />
+	<bean class="be.optis.portal.controllers.CharactersController" />
+	<bean class="be.optis.portal.controllers.SettingsController" />
+	<bean class="be.optis.portal.controllers.HelpController" />
 	<context:annotation-config />
 	<mvc:annotation-driven />
 </beans>

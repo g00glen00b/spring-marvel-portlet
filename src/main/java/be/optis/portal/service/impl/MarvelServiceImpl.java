@@ -1,4 +1,4 @@
-package be.g00glen00b.portal.service.impl;
+package be.optis.portal.service.impl;
 
 import javax.ws.rs.core.MultivaluedMap;
 
@@ -6,8 +6,8 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import be.g00glen00b.portal.model.ApiKeys;
-import be.g00glen00b.portal.service.MarvelService;
+import be.optis.portal.model.ApiKeys;
+import be.optis.portal.service.MarvelService;
 
 import com.sun.jersey.api.client.WebResource;
 import com.sun.jersey.core.util.MultivaluedMapImpl;

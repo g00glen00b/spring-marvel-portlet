@@ -11,6 +11,7 @@
 		<supports>
 			<mime-type>text/html</mime-type>
 			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
 			<portlet-mode>CONFIG</portlet-mode>
 		</supports>
 		<supported-locale>en</supported-locale>
@@ -27,6 +28,7 @@
 		<supports>
 			<mime-type>text/html</mime-type>
 			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
 		</supports>
 		<supported-locale>en</supported-locale>
 		<portlet-info>
@@ -37,7 +39,6 @@
 	<custom-portlet-mode>
 		<portlet-mode>CONFIG</portlet-mode>
 	</custom-portlet-mode>
-
 
 	<container-runtime-option>
 		<name>javax.portlet.actionScopedRequestAttributes</name>

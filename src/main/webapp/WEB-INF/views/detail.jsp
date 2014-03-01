@@ -28,6 +28,16 @@
 			</div>
 		</div>
 	</div>
+	<div class="ui small feed segment" ng-if="character != null && character.comics.available != 0">
+		<h4 class="ui header">Comics</h4>
+		<div class="event" ng-repeat="comic in character.comics.items">
+		  <div class="content">
+		    <div class="summary">
+		       {{comic.name}}
+		    </div>
+		  </div>
+		</div>
+	</div>
 </div>
 	
 <jsp:include page="fragments/scripts.jsp" />

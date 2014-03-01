@@ -1,4 +1,4 @@
-package be.g00glen00b.portal.controllers;
+package be.optis.portal.controllers;
 
 import java.io.IOException;
 import java.util.Set;
@@ -25,7 +25,7 @@ import org.springframework.web.portlet.ModelAndView;
 import org.springframework.web.portlet.bind.annotation.ActionMapping;
 import org.springframework.web.portlet.bind.annotation.RenderMapping;
 
-import be.g00glen00b.portal.model.ApiKeys;
+import be.optis.portal.model.ApiKeys;
 
 @Controller
 @RequestMapping("CONFIG")

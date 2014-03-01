@@ -1,4 +1,4 @@
-package be.g00glen00b.portal.controllers;
+package be.optis.portal.controllers;
 
 import java.io.IOException;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.portlet.ModelAndView;
 import org.springframework.web.portlet.bind.annotation.ResourceMapping;
 
-import be.g00glen00b.portal.model.ApiKeys;
-import be.g00glen00b.portal.service.MarvelService;
+import be.optis.portal.model.ApiKeys;
+import be.optis.portal.service.MarvelService;
 
 @Controller
 @RequestMapping("VIEW")

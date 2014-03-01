@@ -30,13 +30,13 @@ angular.module("marvelApp.controllers")
 	};
 	
 	$scope.setActive = function(/** Character */ character) {
-		$rootScope.$broadcast('be.g00glen00b.portal.marvel.active', character);
+		$rootScope.$broadcast('be.optis.portal.marvel.active', character);
 	};
 })
 .controller("CharacterCtrl", function($scope, $rootScope, MarvelService) {
 	$scope.character = null;
 	
-	$scope.$on('be.g00glen00b.portal.marvel.active', function(evt, character) {
+	$scope.$on('be.optis.portal.marvel.active', function(evt, character) {
 		$scope.character = character;
 	});
 });
