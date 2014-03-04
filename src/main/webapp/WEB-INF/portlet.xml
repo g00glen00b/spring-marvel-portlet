@@ -35,6 +35,38 @@
 			<title>Marvel - Character detail</title>
 		</portlet-info>
 	</portlet>
+	
+	<portlet id="be.g00glen00b.portal.marvel.series">
+		<description>This portlet gives you a list of series the character is participating in.</description>
+		<portlet-name>marvel-series</portlet-name>
+		<display-name>Marvel - Character series</display-name>
+		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<portlet-info>
+			<title>Marvel - Character series</title>
+		</portlet-info>
+	</portlet>
+	
+	<portlet id="be.g00glen00b.portal.marvel.comics">
+		<description>This portlet gives you a list of comics the character is participating in.</description>
+		<portlet-name>marvel-comics</portlet-name>
+		<display-name>Marvel - Character comics</display-name>
+		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<portlet-info>
+			<title>Marvel - Character comics</title>
+		</portlet-info>
+	</portlet>
 
 	<custom-portlet-mode>
 		<portlet-mode>CONFIG</portlet-mode>

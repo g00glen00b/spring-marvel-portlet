@@ -7,3 +7,7 @@
 	margin-right: 1rem;
 	margin-bottom: 1rem;
 }
+
+.marvel-app .ui.items .small.item {
+	min-height: 150px;
+}

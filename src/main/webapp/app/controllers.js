@@ -33,10 +33,21 @@ angular.module("marvelApp.controllers")
 		$rootScope.$broadcast('be.optis.portal.marvel.active', character);
 	};
 })
-.controller("CharacterCtrl", function($scope, $rootScope, MarvelService) {
+.controller("CharacterCtrl", function($scope) {
 	$scope.character = null;
 	
 	$scope.$on('be.optis.portal.marvel.active', function(evt, character) {
 		$scope.character = character;
+	});
+})
+.controller("DetailListCtrl", function($scope) {
+	$scope.model = {
+		character: null,
+		listItem: 0
+	};
+	
+	$scope.$on('be.optis.portal.marvel.active', function(evt, character) {
+		$scope.model.character = character;
+		$scope.model.listItem = 0;
 	});
 });
