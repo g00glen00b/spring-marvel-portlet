@@ -24,22 +24,9 @@ public class CharactersController {
 
     private static final int PAGE_SIZE = 20;
 
-    @RequestMapping
-    public ModelAndView getCharacters(PortletPreferences prefs) {
-        boolean isConfigured = prefs.getMap().containsKey(SettingsController.API_PRIVATE_KEY)
-                && prefs.getMap().containsKey(SettingsController.API_PUBLIC_KEY);
-        return new ModelAndView("list", "isConfigured", isConfigured);
-    }
+    // TODO Engage
 
-    @ResourceMapping("characters")
-    public void getCharacters(@RequestParam("page") int page, ResourceResponse response, PortletPreferences prefs) {
-        try {
-            response.getWriter().append(service.getMarvelCharacters(getApiKeys(prefs), page * PAGE_SIZE, PAGE_SIZE));
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
+    // TODO Engage
 
     private ApiKeys getApiKeys(PortletPreferences prefs) {
         ApiKeys keys = new ApiKeys();

@@ -51,40 +51,9 @@ public class SettingsController {
         return new ModelAndView("settings", "api", apiKeys);
     }
     
-    @RenderMapping(params="action=saveSettings")
-    public String renderSubmitForm(@Valid @ModelAttribute("api") ApiKeys keys, BindingResult result, RenderRequest request, ModelMap model) {
-        validateForm(keys, result);
-        model.addAttribute("success", request.getAttribute("success"));
-        model.addAttribute("error", request.getAttribute("error"));
-        return "settings";
-    }
+    // TODO Engage
 
-    @ActionMapping(params="action=saveSettings")
-    public void submitForm(@Valid @ModelAttribute("api") ApiKeys keys, BindingResult result,
-            PortletPreferences prefs, ActionRequest request, ActionResponse response) {
-        validateForm(keys, result);
-        if (!result.hasErrors()) {
-            try {
-                prefs.setValue(API_PRIVATE_KEY, keys.getPrivateKey());
-                prefs.setValue(API_PUBLIC_KEY, keys.getPublicKey());
-                prefs.store();
-            } catch (ReadOnlyException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (ValidatorException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-            request.setAttribute("success", true);
-        } else {
-            request.setAttribute("errors", "Some values were invalid. Fix these errors and try again.");
-        }
-        
-        response.setRenderParameter("action", "saveSettings");
-    }
+    // TODO Engage
 
     private void validateForm(ApiKeys keys, BindingResult result) {
         Set<ConstraintViolation<ApiKeys>> violations = validator.validate(keys);
