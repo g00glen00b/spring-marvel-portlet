@@ -3,7 +3,7 @@ This project demonstrates a basic portlet application with the data provided by 
 
 ## Installation
 This project is tested on **WebSphere Portal 8**, but might work on other platforms as well. The only difference is that the portlet uses a custom portlet mode called **CONFIG** which is being used to setup the portlet.
-When deploying, make sure the context of the application is **/PA_Marvel**, otherwise web resources (CSS and JavaScript files) won't be loaded.
+When deploying, make sure the context of the application is **/wps/PA_Marvel**, otherwise web resources (CSS and JavaScript files) won't be loaded.
 
 ## Frameworks used
 This portlet uses AngularJS and Semantic UI on the front-end. AngularJS is used to render the business data, while Semantic UI is used as UI framework.
